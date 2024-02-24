@@ -8,12 +8,34 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <header>
-
+<body class="mx-[135px]">
+    <header class=" my-[50px] " >
+       <div class="flex justify-between">
+        <div>
+            <p class="font-extrabold text-3xl text-[#030712] ">P-Ticket</p>
+        </div>
+        <div class="">
+            
+            <ul class="flex  gap-16">
+                <a class="text-xl font-medium text-[#030712B3]" href="">Home</a>
+                <a class="text-xl font-medium text-[#030712B3]" href="">About</a>
+                <a class="text-xl font-medium text-[#030712B3]" href="">Destination</a>
+                <a class="text-xl font-medium text-[#030712B3]" href="">Search</a>
+            </ul>
+        
+        </div>
+        <div class="flex gap-2 w-[130px] h-[50px] bg-[#1DD1001A] rounded-xl border-2 justify-center items-center">
+            <p class="text-xl font-bold text-[#1DD100]">Bus</p>
+            <img src="images/bus-icon.png" alt="">
+        </div>
+       </div>
     </header>
     <main>
-
+        <div class="w-full h-screen flex flex-col gap-10 justify-start pt-20 items-center text-center bg-no-repeat  bg-contain" style="background-image: url('images/banner.png');" >
+            <h1 class="text-6xl font-extrabold text-white mt-10">End-to-End Travel with <br> <span class="text-6xl font-extrabold text-[#1DD100]">P Poribahan</span></h1>
+            <p class="text-xl font-normal text-[#ffffff] w-[690px]">Yes, you can run unit tests and view the rusults directly within the app. The integrated testing features allow for a streamlined.</p>
+            <button class="w-[160px] h-[65px] text-[#030712B3] text-xl font-bold border-[#1DD100] rounded-xl bg-[#1DD100]" >Buy Tickets</button>
+        </div>
     </main>
     <footer>
 
