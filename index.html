@@ -36,7 +36,7 @@
         <div class="w-full h-screen flex flex-col gap-10 justify-start pt-20 items-center text-center bg-no-repeat  bg-contain" style="background-image: url('images/banner.png');" >
             <h1 class="text-6xl font-extrabold text-white mt-10">End-to-End Travel with <br> <span class="text-6xl font-extrabold text-[#1DD100]">P Poribahan</span></h1>
             <p class="text-xl font-normal text-[#ffffff] w-[690px]">Yes, you can run unit tests and view the rusults directly within the app. The integrated testing features allow for a streamlined.</p>
-            <button class="w-[160px] h-[65px] text-[#030712B3] text-xl font-bold border-[#1DD100] rounded-xl bg-[#1DD100]" >Buy Tickets</button>
+            <button onclick="ticketPress()" class="w-[160px] h-[65px] text-[#030712B3] text-xl font-bold border-[#1DD100] rounded-xl bg-[#1DD100]" >Buy Tickets</button>
         </div>
        </section>
        <!-- ------Coupon Section------- -->
@@ -79,7 +79,7 @@
         </div>
        </section>
        <!-- -----Main section ------- -->
-        <section>
+        <section id="main-section" class="hidden">
             <div class="text-center mt-10">
                 <h1 class="text-3xl font-bold">
                     P.H Paribahan
@@ -166,12 +166,12 @@
                                 <div>
                                     <p class="">A</p>
                                 </div>
-                                <div class="w-[110px] h-[55px] border-2 rounded-lg p-4 text-center bg-[#F7F8F8]">A1</div>
-                                <div class="w-[110px] border-2 rounded-lg p-4 text-center h-[55px] bg-[#F7F8F8]">A2</div>
+                                <div id="A1"   class="w-[110px] h-[55px] border-2 rounded-lg p-4 text-center bg-[#F7F8F8]">A1</div>
+                                <div id="A2"  class="w-[110px] border-2 rounded-lg p-4 text-center h-[55px] bg-[#F7F8F8]">A2</div>
                             </div>
                             <div class="flex gap-5">
-                                <div class="w-[110px] border-2 rounded-lg p-4 text-center h-[55px] bg-[#F7F8F8]">A3</div>
-                                <div class="w-[110px] border-2 rounded-lg p-4 text-center h-[55px] bg-[#F7F8F8]">A4</div>
+                                <div id="A3" class="w-[110px] border-2 rounded-lg p-4 text-center h-[55px] bg-[#F7F8F8]">A3</div>
+                                <div id="A4" class="w-[110px] border-2 rounded-lg p-4 text-center h-[55px] bg-[#F7F8F8]">A4</div>
                             </div>
                         </div>
                     </div>
@@ -181,12 +181,12 @@
                                 <div>
                                     <p class="">B</p>
                                 </div>
-                                <div class="w-[110px] h-[55px] border-2 rounded-lg p-4 text-center bg-[#F7F8F8]">B1</div>
-                                <div class="w-[110px] border-2 rounded-lg p-4 text-center h-[55px] bg-[#F7F8F8]">B2</div>
+                                <div id="B1" class="w-[110px] h-[55px] border-2 rounded-lg p-4 text-center bg-[#F7F8F8]">B1</div>
+                                <div id="B2" class="w-[110px] border-2 rounded-lg p-4 text-center h-[55px] bg-[#F7F8F8]">B2</div>
                             </div>
                             <div class="flex gap-5">
-                                <div class="w-[110px] border-2 rounded-lg p-4 text-center h-[55px] bg-[#F7F8F8]">B3</div>
-                                <div class="w-[110px] border-2 rounded-lg p-4 text-center h-[55px] bg-[#F7F8F8]">B4</div>
+                                <div id="B3" class="w-[110px] border-2 rounded-lg p-4 text-center h-[55px] bg-[#F7F8F8]">B3</div>
+                                <div id="B4" class="w-[110px] border-2 rounded-lg p-4 text-center h-[55px] bg-[#F7F8F8]">B4</div>
                             </div>
                         </div>
                     </div>
@@ -196,12 +196,12 @@
                                 <div>
                                     <p class="">C</p>
                                 </div>
-                                <div class="w-[110px] h-[55px] border-2 rounded-lg p-4 text-center bg-[#F7F8F8]">C1</div>
-                                <div class="w-[110px] border-2 rounded-lg p-4 text-center h-[55px] bg-[#F7F8F8]">C2</div>
+                                <div id="C1" class="w-[110px] h-[55px] border-2 rounded-lg p-4 text-center bg-[#F7F8F8]">C1</div>
+                                <div id="C2" class="w-[110px] border-2 rounded-lg p-4 text-center h-[55px] bg-[#F7F8F8]">C2</div>
                             </div>
                             <div class="flex gap-5">
-                                <div class="w-[110px] border-2 rounded-lg p-4 text-center h-[55px] bg-[#F7F8F8]">C3</div>
-                                <div class="w-[110px] border-2 rounded-lg p-4 text-center h-[55px] bg-[#F7F8F8]">C4</div>
+                                <div id="C3" class="w-[110px] border-2 rounded-lg p-4 text-center h-[55px] bg-[#F7F8F8]">C3</div>
+                                <div id="C4" class="w-[110px] border-2 rounded-lg p-4 text-center h-[55px] bg-[#F7F8F8]">C4</div>
                             </div>
                         </div>
                     </div>
@@ -211,12 +211,12 @@
                                 <div>
                                     <p class="">D</p>
                                 </div>
-                                <div class="w-[110px] h-[55px] border-2 rounded-lg p-4 text-center bg-[#F7F8F8]">D1</div>
-                                <div class="w-[110px] border-2 rounded-lg p-4 text-center h-[55px] bg-[#F7F8F8]">D2</div>
+                                <div id="D1" class="w-[110px] h-[55px] border-2 rounded-lg p-4 text-center bg-[#F7F8F8]">D1</div>
+                                <div id="D2" class="w-[110px] border-2 rounded-lg p-4 text-center h-[55px] bg-[#F7F8F8]">D2</div>
                             </div>
                             <div class="flex gap-5">
-                                <div class="w-[110px] border-2 rounded-lg p-4 text-center h-[55px] bg-[#F7F8F8]">D3</div>
-                                <div class="w-[110px] border-2 rounded-lg p-4 text-center h-[55px] bg-[#F7F8F8]">D4</div>
+                                <div id="D3" class="w-[110px] border-2 rounded-lg p-4 text-center h-[55px] bg-[#F7F8F8]">D3</div>
+                                <div id="D4" class="w-[110px] border-2 rounded-lg p-4 text-center h-[55px] bg-[#F7F8F8]">D4</div>
                             </div>
                         </div>
                     </div>
@@ -226,12 +226,12 @@
                                 <div>
                                     <p class="">E</p>
                                 </div>
-                                <div class="w-[110px] h-[55px] border-2 rounded-lg p-4 text-center bg-[#F7F8F8]">E1</div>
-                                <div class="w-[110px] border-2 rounded-lg p-4 text-center h-[55px] bg-[#F7F8F8]">E2</div>
+                                <div id="E1" class="w-[110px] h-[55px] border-2 rounded-lg p-4 text-center bg-[#F7F8F8]">E1</div>
+                                <div id="E2" class="w-[110px] border-2 rounded-lg p-4 text-center h-[55px] bg-[#F7F8F8]">E2</div>
                             </div>
                             <div class="flex gap-5">
-                                <div class="w-[110px] border-2 rounded-lg p-4 text-center h-[55px] bg-[#F7F8F8]">E3</div>
-                                <div class="w-[110px] border-2 rounded-lg p-4 text-center h-[55px] bg-[#F7F8F8]">AE</div>
+                                <div id="E3" class="w-[110px] border-2 rounded-lg p-4 text-center h-[55px] bg-[#F7F8F8]">E3</div>
+                                <div id="E4" class="w-[110px] border-2 rounded-lg p-4 text-center h-[55px] bg-[#F7F8F8]">E4</div>
                             </div>
                         </div>
                     </div>
@@ -241,12 +241,12 @@
                                 <div>
                                     <p class="">F</p>
                                 </div>
-                                <div class="w-[110px] h-[55px] border-2 rounded-lg p-4 text-center bg-[#F7F8F8]">F1</div>
-                                <div class="w-[110px] border-2 rounded-lg p-4 text-center h-[55px] bg-[#F7F8F8]">F2</div>
+                                <div id="F1" class="w-[110px] h-[55px] border-2 rounded-lg p-4 text-center bg-[#F7F8F8]">F1</div>
+                                <div id="F2" class="w-[110px] border-2 rounded-lg p-4 text-center h-[55px] bg-[#F7F8F8]">F2</div>
                             </div>
                             <div class="flex gap-5">
-                                <div class="w-[110px] border-2 rounded-lg p-4 text-center h-[55px] bg-[#F7F8F8]">F3</div>
-                                <div class="w-[110px] border-2 rounded-lg p-4 text-center h-[55px] bg-[#F7F8F8]">F4</div>
+                                <div id="F3" class="w-[110px] border-2 rounded-lg p-4 text-center h-[55px] bg-[#F7F8F8]">F3</div>
+                                <div id="F4" class="w-[110px] border-2 rounded-lg p-4 text-center h-[55px] bg-[#F7F8F8]">F4</div>
                             </div>
                         </div>
                     </div>
@@ -256,12 +256,12 @@
                                 <div>
                                     <p class="">G</p>
                                 </div>
-                                <div class="w-[110px] h-[55px] border-2 rounded-lg p-4 text-center bg-[#F7F8F8]">G1</div>
-                                <div class="w-[110px] border-2 rounded-lg p-4 text-center h-[55px] bg-[#F7F8F8]">G2</div>
+                                <div id="G1" class="w-[110px] h-[55px] border-2 rounded-lg p-4 text-center bg-[#F7F8F8]">G1</div>
+                                <div id="G2" class="w-[110px] border-2 rounded-lg p-4 text-center h-[55px] bg-[#F7F8F8]">G2</div>
                             </div>
                             <div class="flex gap-5">
-                                <div class="w-[110px] border-2 rounded-lg p-4 text-center h-[55px] bg-[#F7F8F8]">G3</div>
-                                <div class="w-[110px] border-2 rounded-lg p-4 text-center h-[55px] bg-[#F7F8F8]">G4</div>
+                                <div id="G3" class="w-[110px] border-2 rounded-lg p-4 text-center h-[55px] bg-[#F7F8F8]">G3</div>
+                                <div id="G4" class="w-[110px] border-2 rounded-lg p-4 text-center h-[55px] bg-[#F7F8F8]">G4</div>
                             </div>
                         </div>
                     </div>
@@ -271,12 +271,12 @@
                                 <div>
                                     <p class="">H</p>
                                 </div>
-                                <div class="w-[110px] h-[55px] border-2 rounded-lg p-4 text-center bg-[#F7F8F8]">H1</div>
-                                <div class="w-[110px] border-2 rounded-lg p-4 text-center h-[55px] bg-[#F7F8F8]">H2</div>
+                                <div id="H1" class="w-[110px] h-[55px] border-2 rounded-lg p-4 text-center bg-[#F7F8F8]">H1</div>
+                                <div id="H2" class="w-[110px] border-2 rounded-lg p-4 text-center h-[55px] bg-[#F7F8F8]">H2</div>
                             </div>
                             <div class="flex gap-5">
-                                <div class="w-[110px] border-2 rounded-lg p-4 text-center h-[55px] bg-[#F7F8F8]">H3</div>
-                                <div class="w-[110px] border-2 rounded-lg p-4 text-center h-[55px] bg-[#F7F8F8]">H4</div>
+                                <div id="H3" class="w-[110px] border-2 rounded-lg p-4 text-center h-[55px] bg-[#F7F8F8]">H3</div>
+                                <div id="H4" class="w-[110px] border-2 rounded-lg p-4 text-center h-[55px] bg-[#F7F8F8]">H4</div>
                             </div>
                         </div>
                     </div>
@@ -286,12 +286,12 @@
                                 <div>
                                     <p class="">I</p>
                                 </div>
-                                <div class="w-[110px] h-[55px] border-2 rounded-lg p-4 text-center bg-[#F7F8F8]">I1</div>
-                                <div class="w-[110px] border-2 rounded-lg p-4 text-center h-[55px] bg-[#F7F8F8]">I2</div>
+                                <div id="I1" class="w-[110px] h-[55px] border-2 rounded-lg p-4 text-center bg-[#F7F8F8]">I1</div>
+                                <div id="I2" class="w-[110px] border-2 rounded-lg p-4 text-center h-[55px] bg-[#F7F8F8]">I2</div>
                             </div>
                             <div class="flex gap-5">
-                                <div class="w-[110px] border-2 rounded-lg p-4 text-center h-[55px] bg-[#F7F8F8]">I3</div>
-                                <div class="w-[110px] border-2 rounded-lg p-4 text-center h-[55px] bg-[#F7F8F8]">I4</div>
+                                <div id="I3" class="w-[110px] border-2 rounded-lg p-4 text-center h-[55px] bg-[#F7F8F8]">I3</div>
+                                <div id="I4" class="w-[110px] border-2 rounded-lg p-4 text-center h-[55px] bg-[#F7F8F8]">I4</div>
                             </div>
                         </div>
                     </div>
@@ -301,12 +301,12 @@
                                 <div>
                                     <p class="">J</p>
                                 </div>
-                                <div class="w-[110px] h-[55px] border-2 rounded-lg p-4 text-center bg-[#F7F8F8]">J1</div>
-                                <div class="w-[110px] border-2 rounded-lg p-4 text-center h-[55px] bg-[#F7F8F8]">J2</div>
+                                <div id="J1" class="w-[110px] h-[55px] border-2 rounded-lg p-4 text-center bg-[#F7F8F8]">J1</div>
+                                <div id="J2" class="w-[110px] border-2 rounded-lg p-4 text-center h-[55px] bg-[#F7F8F8]">J2</div>
                             </div>
                             <div class="flex gap-5">
-                                <div class="w-[110px] border-2 rounded-lg p-4 text-center h-[55px] bg-[#F7F8F8]">J3</div>
-                                <div class="w-[110px] border-2 rounded-lg p-4 text-center h-[55px] bg-[#F7F8F8]">J4</div>
+                                <div id="J3" class="w-[110px] border-2 rounded-lg p-4 text-center h-[55px] bg-[#F7F8F8]">J3</div>
+                                <div id="J4" class="w-[110px] border-2 rounded-lg p-4 text-center h-[55px] bg-[#F7F8F8]">J4</div>
                             </div>
                         </div>
                     </div>
@@ -389,5 +389,6 @@
 
     </footer>
     <script src="Scripts/sctipts.js"></script>
+    <script src="Scripts/function.js"></script>
 </body>
 </html>
